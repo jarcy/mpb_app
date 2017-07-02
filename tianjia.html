@@ -1,0 +1,209 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+	<title>项目app</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/css.css" />
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+	
+</head>
+<body style="background: #FFFFFF;">
+     <div class="hezi caidan1">
+     	
+     	<div class="hezi1">
+     		 
+     		
+     	    
+     		<div class="input-group hezi3 dl "> 
+     			<a href="wodechanpin.html"><img src="img/f1.png" style="margin-top: 0;margin-left: 2px;"></a>
+                 <h4 class="dl11">添加页</h4> 
+                <a href="wodechanpin.html"><h4 style="margin-right: -40%;margin-top: -15px;">添加</h4><a>
+            </div>
+           
+     	</div>
+     
+     	 <div class="neirong xingxi" style="height: 358px;overflow: hidden;">
+     	 	   <div class="xinxi1 ">
+     	 	   	   <h4 class="xinmin1">药品类型：</h4>
+     	 	   	    
+                   <div class="xinmin2 nav-tabs" >      
+                                <select class="form-control tabs" id="tabs" style="width: 60%;margin-top: 2px;"  onchange="tab()">
+                                  
+                                     <option value="tab1" class="dropdown current active">
+                                     	<a href="#tab1"data-toggle="tab" >药品</a>
+                                     </option>
+                                     <option value="tab2">
+                                     	<a href="#ios"data-toggle="tab" >医疗器械</a>
+                                     </option>
+                                     <option value="tab3">
+                                     	<a href="#jmeter" data-toggle="tab">保健品</a>
+                                     </option>
+                                     <option value="tab4">
+                                     	<a href="#tab4" >招商加盟</a>
+                                     </option>
+                                
+                               </select>
+                               
+                   </div> 
+     	 	   </div>  
+                <div class="kongheziz tab_container"id="tabs1">
+                   <div class="tab-pane fade in active tab_content" id="tab1"  style="display: none; ">
+                       <a href="#">
+   	                     <div class="cn">
+   	      	               
+   	      	                 <div class="cn1">
+   	      		                <ul>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>产品名称</h4><input type="text"class="x11" value="" / ></li>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>规格类型</h4><input type="text"class="x11" value="" / ></li>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>厂家信息</h4><input type="text"class="x11" value="" / ></li>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>剂型</h4><input type="text"class="x12" value="" / ></li>
+   	      			               
+     	 	   	  
+                                   <li class="cc"><img src="img/v8.png"/><h4>药品类型</h4>
+                                        <select id="myTab" class="form-control nav nav-tabs tabs x11" style="width: 60%;margin-top: -36px;">
+                                           <option value="all" class="active"><a href="#tttt" data-toggle="tab">OTC</a></option>
+                                           <option value="check_pending"><a href="#tttt1" data-toggle="tab">处方药</a></option>
+                                         
+                                        </select>
+                                   </li>
+                                   <li class="cc"><img src="img/v8.png"/><h4>渠道</h4>
+                                        <select id="myTab" class="form-control nav nav-tabs tabs x12" onchange="selectOnchang(this)"style="width: 66.3%;margin-top: -36px;">
+                                           <option value="all" class="active"><a href="#tttt" data-toggle="tab">医院临床</a></option>
+                                           <option value="check_pending"><a href="#tttt1" data-toggle="tab">药铺</a></option>
+                                           <option value="no"><a href="#tttt2" data-toggle="tab">医院销售</a></option>
+                                           <option value="yes"><a href="#tttt3" data-toggle="tab">第三终端</a></option>
+                                           <option value="ys"><a href="#tttt3" data-toggle="tab">加盟</a></option>
+                                        </select>
+                                   </li> 
+   	      		                </ul>
+   	      	                 </div>
+   	                     </div>
+   	                   </a>
+   	               </div>
+   	                <div class="tab-pane fade in active tab_content" style="display: block; " id="tab2">
+   	                	<a href="#">
+   	                     <div class="cn">
+   	      	               
+   	      	                <div class="cn1">
+   	      		                <ul>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>产品名称</h4><input type="text"class="x11" value="" / ></li>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>规格类型</h4><input type="text"class="x11" value="" / ></li>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>厂家信息</h4><input type="text"class="x11" value="" / ></li>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>剂型</h4><input type="text"class="x12" value="" / ></li>
+   	      			               
+     	 	   	  
+                                   <li class="cc"><img src="img/v8.png"/><h4>药品类型</h4>
+                                        <select id="myTab" class="form-control nav nav-tabs tabs x11" style="width: 60%;margin-top: -36px;">
+                                           <option value="all" class="active"><a href="#tttt" data-toggle="tab">一类</a></option>
+                                           <option value="check_pending"><a href="#tttt1" data-toggle="tab">二类</a></option>
+                                           <option value="no"><a href="#tttt2" data-toggle="tab">三类</a></option>
+                                           <option value="yes"><a href="#tttt3" data-toggle="tab">加盟</a></option>
+                                        </select>
+                                   </li>
+                                   <li class="cc"><img src="img/v8.png"/><h4>渠道</h4>
+                                        <select id="myTab" class="form-control nav nav-tabs tabs x12" onchange="selectOnchang(this)"style="width: 66.3%;margin-top: -36px;">
+                                           <option value="all" class="active"><a href="#tttt" data-toggle="tab">医院临床</a></option>
+                                           <option value="check_pending"><a href="#tttt1" data-toggle="tab">药铺</a></option>
+                                           <option value="no"><a href="#tttt2" data-toggle="tab">医院销售</a></option>
+                                           <option value="yes"><a href="#tttt3" data-toggle="tab">第三终端</a></option>
+                                           <option value="ys"><a href="#tttt3" data-toggle="tab">加盟</a></option>
+                                        </select>
+                                   </li> 
+   	      		                </ul>
+   	      	                 </div>
+   	                     </div>
+   	                   </a>
+   	                </div>
+   	                <div class="tab-pane fade in active tab_content" style="display: block; " id="tab3">
+   	                	<a href="#">
+   	                     <div class="cn">
+   	      	               
+   	      	                 <div class="cn1">
+   	      		                <ul>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>名称</h4><input type="text"class="x11" value="" / ></li>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>规格类型</h4><input type="text"class="x11" value="" / ></li>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>厂家信息</h4><input type="text"class="x11" value="" / ></li>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>剂型</h4><input type="text"class="x12" value="" / ></li>
+   	      			               
+     	 	   	  
+                                  
+                                   <li class="cc"><img src="img/v8.png"/><h4>渠道</h4>
+                                        <select id="myTab" class="form-control nav nav-tabs tabs x12" onchange="selectOnchang(this)"style="width: 66.3%;margin-top: -36px;">
+                                           <option value="all" class="active"><a href="#tttt" data-toggle="tab">医院临床</a></option>
+                                           <option value="check_pending"><a href="#tttt1" data-toggle="tab">药铺</a></option>
+                                           <option value="no"><a href="#tttt2" data-toggle="tab">医院销售</a></option>
+                                           <option value="yes"><a href="#tttt3" data-toggle="tab">第三终端</a></option>
+                                           <option value="ys"><a href="#tttt3" data-toggle="tab">加盟</a></option>
+                                        </select>
+                                   </li> 
+   	      		                </ul>
+   	      	                 </div>
+   	                     </div>
+   	                   </a>
+   	                </div> 
+   	                <div class="tab-pane fade in active tab_content" style="display: block; " id="tab4">
+   	                	<a href="#">
+   	                     <div class="cn">
+   	      	               
+   	      	                <div class="cn1">
+   	      		                <ul>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>店面名称</h4><input type="text"class="x11" value="" / ></li>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>店面地址</h4><input type="text"class="x11" value="" / ></li>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>联系电话</h4><input type="text"class="x11" value="" / ></li>
+   	      			               <li class="cc"><img src="img/v8.png"/><h4>本人名称</h4><input type="text"class="x121" value="" / ></li>
+   	      			               
+     	 	   	  
+                                   <li class="cc"><img src="img/v8.png"/><h4>选择类型</h4>
+                                        <select id="myTab" class="form-control nav nav-tabs tabs x11" style="width: 60%;margin-top: -36px;">
+                                           <option value="all" class="active"><a href="#tttt" data-toggle="tab">一类</a></option>
+                                           <option value="check_pending"><a href="#tttt1" data-toggle="tab">二类</a></option>
+                                           <option value="no"><a href="#tttt2" data-toggle="tab">三类</a></option>
+                                           <option value="yes"><a href="#tttt3" data-toggle="tab">加盟</a></option>
+                                        </select>
+                                   </li>
+                                   <li class="cc"><img src="img/v8.png"/><h4>地区</h4>
+                                        <select id="myTab" class="form-control nav nav-tabs tabs x12" onchange="selectOnchang(this)"style="width: 66.3%;margin-top: -36px;">
+                                           <option value="all" class="active"><a href="#tttt" data-toggle="tab">河南</a></option>
+                                           <option value="check_pending"><a href="#tttt1" data-toggle="tab">郑州</a></option>
+                                           <option value="no"><a href="#tttt2" data-toggle="tab">其他</a></option>
+                                           
+                                        </select>
+                                   </li> 
+   	      		                </ul>
+   	      	                 </div>
+   	                     </div>
+   	                   </a>
+   	                </div> 	
+     	 	   </div>
+     	 	  
+               
+     	
+   </div>        
+        
+  
+ <script>
+ function tab(){
+  var pid= $('#tabs').val(); 
+  var tabs=["tab1","tab2","tab3","tab4"];
+  for(var i=0;i<4;i++){
+   if(tabs[i]==pid){
+    $('#'+tabs[i]).css("display","block");
+  }else{
+    $('#'+tabs[i]).css("display","none");
+  }
+  }
+ }
+ </script>
+ <script src="js/jquery.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+     
+<script>  
+$(function () { 
+	$("[data-toggle='popover']").popover();
+});
+</script>
+</body>
+</html>
